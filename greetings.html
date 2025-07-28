@@ -95,7 +95,7 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name="Elise !"
+        name="Elise 😊​ !"
         if (hrs < 12)
             greet = 'Bonjour  '+name;
         else if (hrs >= 12 && hrs <= 17)
@@ -114,8 +114,8 @@ function dispalyGreetings(today){
 ];
 
         var dayName = days[today.getDay()];
-        var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
+        var monthName = monthNames[today.getMonth()];
         var year = today.getFullYear();
         document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
 
