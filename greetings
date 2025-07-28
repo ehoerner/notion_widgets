@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,22 +95,22 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name=""
+        name="Elise !"
         if (hrs < 12)
-            greet = 'Good Morning  '+name;
+            greet = 'Bonjour  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Good Afternoon '+name;
+            greet = 'Bon après-midi '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Good Evening  '+name;
+            greet = 'Bonsoir  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
 
     function dispalyDate(today) {  
        
-        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+        const days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+        const monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+  "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
 ];
 
         var dayName = days[today.getDay()];
